@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Prathiba.lk</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6eb0ec',
+            textDark: '#111827',
+            textLight: '#6b7280',
+            white: '#ffffff',
+            bgc: '#efeaee',
+          },
+          fontFamily: {
+            rale: ['Raleway', 'sans-serif'],
+          },
+          maxWidth: {
+            container: '1200px',
+          },
+          gridTemplateAreas: {
+            header: ['header header'],
+            main: ['main main'],
+            footer: ['footer footer'],
+          }
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-rale p-0 m-0 box-border list-none no-underline">
+
+  <!-- header -->
+  <header
+    class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+    <div class="px-4">
+      <div class="flex items-center justify-between">
+        <div class="flex shrink-0">
+          <a aria-current="page" class="flex items-center" href="/">
+            <h1 class=" h-10 text-[#14b8a6] text-3xl font-bold">P</h1>
+            <h1 class="h-9 w-auto text-2xl text-[#14b8a6] font-bold">rathibha <SPan class="text-[#d946ef]">lern</SPan>
+            </h1>
+            <p class="sr-only">Prathibha lern</p>
+          </a>
+        </div>
+        <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
+          <a aria-current="page"
+            class="inline-block rounded-lg px-2 py-1 text-sm font-medium font-semibold text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+            href="#">Contact</a>
+          <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium font-semibold text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+            href="#">Teachers</a>
+          <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium font-semibold text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+            href="#team">About Us</a>
+        </div>
+        <div class="flex items-center justify-end gap-3">
+          <a class="hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-[#fae8ff] sm:inline-flex"
+            href="/login">Sign in</a>
+          <a class="inline-flex items-center justify-center rounded-xl bg-[#d946ef] px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-[#a21caf] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            href="/login">Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <br><br><br>
+
+  <!-- banner -->
+  <section
+    class="header__container max-w-container m-auto py-8 px-4 grid gap-8 text-center md:grid-cols-2 md:items-center md:text-left ">
+    <div class="header__image md:order-2">
+      <img src="assets/header.jpg" alt="header" class="flex w-full" />
+    </div>
+    <div class="header__content">
+      <h1 class="mb-4 text-6xl font-bold leading-20 text-textDark">Single Platform For All Your <span
+          class="text-[#d946ef]">English Learning</span> Needs.</h1>
+      <p class="mb-8 font-medium text-sm leading-7 ">
+        Prathibha LK is an interactive platform designed for Sinhala speakers who are interested in learning English.
+        Through this platform, users can access various features to enhance their English language skills. The platform
+        combines with modern learning tools to provide an effective learning experience for Sri Lankan learners.
+      </p>
+      <form action="/"
+        class="flex items-center justify-between flex-col gap-y-4 gap-x-0  bg-gray-50 rounded-lg lg:flex-row">
+
+
+        <button type="submit"
+          class="w-full py-4 px-8 outline-none border-none text-base whitespace-nowrap text-white bg-[#d946ef] hover:bg-[#a21caf] rounded-lg cursor-pointer ">Browse
+          courses</button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- main components -->
+  <div id="features" class="relative w-full px-8 py-1  md:py-16 lg:py-24 xl:py-40 xl:px-0">
+    <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
+
+      <h3
+        class="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
+        Main Components of the System</h3>
+      <div class="flex flex-col w-full mt-0 lg:flex-row sm:mt-10 lg:mt-20">
+
+        <div class="w-full max-w-md p-4 mx-auto mb-0 sm:mb-16 lg:mb-0 lg:w-1/3">
+          <div class="relative flex flex-col items-center justify-center w-full h-full p-20 mr-5 rounded-lg">
+            <svg class="absolute w-full h-full text-gray-100 fill-current" viewBox="0 0 377 340"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <g>
+                  <path
+                    d="M342.8 3.7c24.7 14 18.1 75 22.1 124s18.6 85.8 8.7 114.2c-9.9 28.4-44.4 48.3-76.4 62.4-32 14.1-61.6 22.4-95.9 28.9-34.3 6.5-73.3 11.1-95.5-6.2-22.2-17.2-27.6-56.5-47.2-96C38.9 191.4 5 151.5.9 108.2-3.1 64.8 22.7 18 61.8 8.7c39.2-9.2 91.7 19 146 16.6 54.2-2.4 110.3-35.6 135-21.6z" />
+                </g>
+              </g>
+            </svg>
+            <!-- FEATURE Icon 1 -->
+
+
+            <img src="assets/daily.png" alt="" class="relative w-20">
+
+            <h4 class="relative mt-6 text-lg font-bold text-center">Word of the Day Feature</h4>
+            <p class="relative mt-2 text-base text-center text-gray-600">Automate your workflow with these
+              top of the
+              line marketing tools.</p>
+            <a href="#_" class="relative flex mt-2 text-sm font-medium text-indigo-500 underline">Learn
+              More</a>
+          </div>
+        </div>
+
+        <div class="w-full max-w-md p-4 mx-auto mb-0 sm:mb-16 lg:mb-0 lg:w-1/3">
+          <div class="relative flex flex-col items-center justify-center w-full h-full p-20 mr-5 rounded-lg">
+            <svg class="absolute w-full h-full text-gray-100 fill-current" viewBox="0 0 358 372"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <g>
+                  <path
+                    d="M315.7 6.5c30.2 15.1 42.6 61.8 41.5 102.5-1.1 40.6-15.7 75.2-24.3 114.8-8.7 39.7-11.3 84.3-34.3 107.2-23 22.9-66.3 23.9-114.5 30.7-48.2 6.7-101.3 19.1-123.2-4.1-21.8-23.2-12.5-82.1-21.6-130.2C30.2 179.3 2.6 141.9.7 102c-2-39.9 21.7-82.2 57.4-95.6 35.7-13.5 83.3 2.1 131.2 1.7 47.9-.4 96.1-16.8 126.4-1.6z" />
+                </g>
+              </g>
+            </svg>
+            <!-- FEATURE Icon 2 -->
+
+            <img src="assets/video.png" alt="" class="relative w-20">
+
+            <h4 class="relative mt-6 text-lg font-bold text-center">Video Lessons Repository</h4>
+            <p class="relative mt-2 text-base text-center text-gray-600">Your Marketing tools will learn how
+              to better
+              convert and sell.</p>
+            <a href="#_" class="relative flex mt-2 text-sm font-medium text-indigo-500 underline">Learn
+              More</a>
+          </div>
+        </div>
+
+        <div class="w-full max-w-md p-4 mx-auto mb-16 lg:mb-0 lg:w-1/3">
+          <div class="relative flex flex-col items-center justify-center w-full h-full p-20 mr-5 rounded-lg">
+            <svg class="absolute w-full h-full text-gray-100 fill-current" viewBox="0 0 378 410"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <g>
+                  <path
+                    d="M305.9 14.4c23.8 24.6 16.3 84.9 26.6 135.1 10.4 50.2 38.6 90.3 43.7 137.8 5.1 47.5-12.8 102.4-50.7 117.4-37.9 15.1-95.7-9.8-151.7-12.2-56.1-2.5-110.3 17.6-130-3.4-19.7-20.9-4.7-82.9-11.5-131.2C25.5 209.5-3 174.7 1.2 147c4.2-27.7 41-48.3 75-69.6C110.1 56.1 141 34.1 184 17.5c43.1-16.6 98.1-27.7 121.9-3.1z" />
+                </g>
+              </g>
+            </svg>
+            <!-- FEATURE Icon 3 -->
+
+            <img src="assets/ai.png" alt="" class="relative w-20">
+
+            <h4 class="relative mt-6 text-lg font-bold text-center">AI-Power Daily Journal</h4>
+            <p class="relative mt-2 text-base text-center text-gray-600">Our smart notifications will notify
+              you when
+              users convert.</p>
+            <a href="#_" class="relative flex mt-2 text-sm font-medium text-indigo-500 underline">Learn
+              More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Statistics -->
+  <div class="counter">
+    <div class="container ">
+
+      <h3
+        class="items-center px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
+        Our Statics</h3>
+
+      <!-- Counter -->
+      <div id="counter" class="py-48 pb-1">
+        <div class="cell">
+          <div class="counter-value number-count" ">1</div>
+          <p class=" counter-info">Happy Users</p>
+          </div>
+          <div class="cell">
+            <div class="counter-value number-count">1</div>
+            <p class="counter-info">Issues Solved</p>
+          </div>
+          <div class="cell">
+            <div class="counter-value number-count">1</div>
+            <p class="counter-info">Good Reviews</p>
+          </div>
+          <div class="cell">
+            <div class="counter-value number-count">1</div>
+            <p class="counter-info">Case Studies</p>
+          </div>
+          <div class="cell">
+            <div class="counter-value number-count">1</div>
+            <p class="counter-info">Orders Received</p>
+          </div>
+        </div>
+        <!-- end of counter -->
+
+      </div> <!-- end of container -->
+    </div>
+
+
+
+
+    <!-- Benifits -->
+    <section class="bg-white border-b py-">
+      <div class="container max-w-5xl mx-auto m-8">
+        <h3
+          class=" items-center px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
+          Benifits to Students</h3>
+
+        <div class="w-full mb-4 py-10">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+
+        <!-- 01 -->
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Interactive Learning Tools
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et
+              sit amet ligula.
+              <br />
+              <br />
+
+            </p>
+          </div>
+
+          <div class="w-full sm:w-1/2 p-6">
+            <img src="assets/tool.png" alt="">
+          </div>
+
+        </div>
+
+        <!-- 02 -->
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <img src="assets/online.png" alt="">
+
+
+          </div>
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                Video lessons for visual and audutory learning
+              </h3>
+              <p class="text-gray-600 mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et
+                sit amet ligula.
+                <br />
+                <br />
+                Images :
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              AI-powered writing analysis fr immediate feedback
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et
+              sit amet ligula.
+              <br />
+              <br />
+
+            </p>
+          </div>
+
+          <div class="w-full sm:w-1/2 p-6">
+            <img src="assets/ai-power.png" alt="">
+          </div>
+
+        </div>
+
+        <!-- 04 -->
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <img src="assets/flexible.png" alt="">
+
+
+          </div>
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                Flexible learning
+              </h3>
+              <p class="text-gray-600 mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et
+                sit amet ligula.
+                <br />
+                <br />
+                Images :
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Learn at your own place
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et
+              sit amet ligula.
+              <br />
+              <br />
+
+            </p>
+          </div>
+
+          <div class="w-full sm:w-1/2 p-6">
+            <img src="assets/learn.png" alt="">
+          </div>
+
+        </div>
+
+        <!-- 06 -->
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <img src="assets/cost.png" alt="">
+
+
+          </div>
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                Cost-Effective lerning </h3>
+
+              <p class="text-gray-600 mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et
+                sit amet ligula.
+                <br />
+                <br />
+                Images :
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </section>
+
+    <!-- results -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
+        <h1 class="text-3xl font-bold text-center text-gray-900 mb-8 sm:text-6xl"> Outputs / Results From the System
+        </h1>
+        <p class="text-base text-gray-700 md:text-lg">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa
+          quae.
+        </p>
+      </div>
+      <div class="grid gap-8 row-gap-12 lg:grid-cols-2">
+        <div class="max-w-md sm:mx-auto sm:text-center">
+          <div
+            class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-fuchsia-50 sm:mx-auto sm:w-24 sm:h-24">
+            <i class='bx bxs-quote-alt-left bx-md text-[#14b8a6]'></i>
+          </div>
+          <h6 class="mb-3 text-xl font-bold leading-5">Enhanced English Language Skills</h6>
+          <p class="mb-3 text-sm text-gray-900">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium rem aperiam, eaque ipsa quae. Sed
+            ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa
+            quae.
+          </p>
+        </div>
+
+        <div class="max-w-md sm:mx-auto sm:text-center">
+          <div
+            class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-fuchsia-50 sm:mx-auto sm:w-24 sm:h-24">
+            <i class='bx bxs-quote-alt-right bx-md text-[#14b8a6]'></i>
+          </div>
+          <h6 class="mb-3 text-xl font-bold leading-5">Improved Vocabulary</h6>
+          <p class="mb-3 text-sm text-gray-900">
+            Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac suscipit leo. Carpe diem vulputate est nec
+            commodo rutrum. Pellentesque mattis convallis nisi eu and I ain’t stoppin until the swear jar’s full.
+          </p>
+        </div>
+
+        <div class="max-w-md sm:mx-auto sm:text-center">
+          <div
+            class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-fuchsia-50 sm:mx-auto sm:w-24 sm:h-24">
+            <i class='bx bxs-quote-alt-left bx-md text-[#14b8a6]'></i>
+          </div>
+          <h6 class="mb-3 text-xl font-bold leading-5">Better Grammer Understanding</h6>
+          <p class="mb-3 text-sm text-gray-900">
+            Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac suscipit leo. Carpe diem vulputate est nec
+            commodo rutrum. Pellentesque mattis convallis nisi eu and I ain’t stoppin until the swear jar’s full.
+          </p>
+        </div>
+
+        <div class="max-w-md sm:mx-auto sm:text-center">
+          <div
+            class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-fuchsia-50 sm:mx-auto sm:w-24 sm:h-24">
+            <i class='bx bxs-quote-alt-right bx-md text-[#14b8a6]'></i>
+          </div>
+          <h6 class="mb-3 text-xl font-bold leading-5">Enhanced Writiing Abilities</h6>
+          <p class="mb-3 text-sm text-gray-900">
+            Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac suscipit leo. Carpe diem vulputate est nec
+            commodo rutrum. Pellentesque mattis convallis nisi eu and I ain’t stoppin until the swear jar’s full.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- team -->
+    <div class=" flex flex-col items-center justify-center" id="team">
+
+      <div class="max-w-6xl w-full px-6 py-8 bg-white rounded-lg">
+        <h1 class="text-3xl font-bold text-center text-gray-900 mb-8 sm:text-6xl">Our Team</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Person 1 -->
+          <div class="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
+            <img src="assets/team/pasindu.png" alt="Person 1" class="w-32 h-32 rounded-full object-cover mb-4">
+            <h2 class="text-xl font-semibold text-gray-700">Pasindu Surath</h2>
+            <p class="text-gray-600">[Frontend Deverloper]</p>
+          </div>
+
+          <!-- Person 2 -->
+          <div class="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
+            <img src="assets/team/dulina.jpg" alt="Person 2" class="w-32 h-32 rounded-full object-cover mb-4">
+            <h2 class="text-xl font-semibold text-gray-700">Dulina Chandul</h2>
+            <p class="text-gray-600">[Backend Deverloper]</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+      <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+        <div class="text-center">
+          <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 ">
+            <h1 class="h-10 text-[#14b8a6] text-3xl font-bold">P</h1>
+            <h1 class="text-[#14b8a6]">rathibha <span class="text-[#d946ef]">lern</span></h1>
+
+          </a>
+
+          <!-- <h1 class=" h-10 text-[#14b8a6] text-3xl font-bold">P</h1><h1 class="h-9 w-auto text-2xl text-[#14b8a6] font-bold">rathibha <SPan class="text-[#d946ef]">lern</SPan>
+          </h1> -->
+
+          <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2024-2025 Prathiba.lk™. All Rights
+            Reserved. </span>
+          <ul class="flex justify-center mt-5 space-x-5">
+            <li>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-[#14b8a6] dark:text-gray-400">
+                <i class='bx bxl-facebook-circle bx-sm'></i> </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-[#14b8a6] dark:text-gray-400">
+                <i class='bx bxl-instagram-alt bx-sm'></i> </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-[#14b8a6] dark:text-gray-400">
+                <i class='bx bxl-github bx-sm'></i> </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-[#14b8a6] dark:text-gray-400">
+                <i class='bx bxl-twitter bx-sm'></i> </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-[#14b8a6] dark:text-gray-400">
+                <i class='bx bxl-whatsapp bx-sm'></i> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src=" https://unpkg.com/scrollreveal">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
